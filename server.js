@@ -12,6 +12,7 @@ const mime = (file) => {
   return 'text/plain';
 };
 
+
 const server = http.createServer((req, res) => {
   if (req.url === '/api/time') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
