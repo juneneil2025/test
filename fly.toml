@@ -5,8 +5,6 @@
 
 app = 'simple-proud-surf-8937'
 primary_region = 'hkg'
-env:
-  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
 [build]
 

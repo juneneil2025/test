@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  const safePath = req.url === '/' ? '/index.html' : req.url;
+  const safePath = req.url === '/' ? '/index.js' : req.url;
   const filePath = path.join(__dirname, safePath);
 
   fs.readFile(filePath, (err, data) => {
